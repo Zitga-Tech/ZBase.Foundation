@@ -1,0 +1,51 @@
+﻿<#@ template debug="false" hostspecific="false" language="C#" #>
+<#@ assembly name="System.Core" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ output extension=".cs" #>
+<#
+    int ParamCount = 19;
+#>
+///*****************************///
+///                             ///
+/// This file is auto-generated ///
+/// DO NOT manually modify it!  ///
+///                             ///
+///*****************************///
+
+namespace ZBase.Foundation
+{<# for (var i = 1; i <= ParamCount; i++) { #>
+
+    public readonly struct Values<T0<# for (var k = 1; k <= i; k++) { #>, T<#= k #><# } #>>
+    {
+<# for (var k = 0; k <= i; k++) { #>
+        public readonly T<#= k #> Value<#= k #>;
+<# } #>
+
+        public Values(
+              T0 value0
+<# for (var k = 1; k <= i; k++) { #>
+            , T<#= k #> value<#= k #>
+<# } #>
+        )
+        {
+<# for (var k = 0; k <= i; k++) { #>
+            Value<#= k #> = value<#= k #>;
+<# } #>
+        }
+
+        public void Deconstruct(
+              out T0 value0
+<# for (var k = 1; k <= i; k++) { #>
+            , out T<#= k #> value<#= k #>
+<# } #>
+        )
+        {
+<# for (var k = 0; k <= i; k++) { #>
+            value<#= k #> = Value<#= k #>;
+<# } #>
+        }
+    }
+<# } #>
+}

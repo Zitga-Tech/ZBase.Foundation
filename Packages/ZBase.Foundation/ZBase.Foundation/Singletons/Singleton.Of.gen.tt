@@ -1,0 +1,54 @@
+﻿<#@ template debug="false" hostspecific="false" language="C#" #>
+<#@ assembly name="System.Core" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ output extension=".cs" #>
+<#
+    int ParamCount = 19;
+#>
+///*****************************///
+///                             ///
+/// This file is auto-generated ///
+/// DO NOT manually modify it!  ///
+///                             ///
+///*****************************///
+
+using System;
+
+namespace ZBase.Foundation.Singletons
+{
+    partial class Singleton
+    {<# for (var i = 1; i <= ParamCount; i++) { #>
+
+        public static Values<T0<# for (var k = 1; k <= i; k++) { #>, T<#= k #><# } #>>
+            Of<T0<# for (var k = 1; k <= i; k++) { #>, T<#= k #><# } #>>()
+<# for (var k = 0; k <= i; k++) { #>
+            where T<#= k #> : class, new()
+<# } #>
+            => new(
+                  Single<T0>.GetInstance(() => new T0())
+<# for (var k = 1; k <= i; k++) { #>
+                , Single<T<#= k #>>.GetInstance(() => new T<#= k #>())
+<# } #>
+            );
+
+        public static Values<T0<# for (var k = 1; k <= i; k++) { #>, T<#= k #><# } #>>
+            Of<T0<# for (var k = 1; k <= i; k++) { #>, T<#= k #><# } #>>(
+                  Func<T0> instantiator0
+<# for (var k = 1; k <= i; k++) { #>
+                , Func<T<#= k #>> instantiator<#= k #>
+<# } #>
+            )
+<# for (var k = 0; k <= i; k++) { #>
+            where T<#= k #> : class, new()
+<# } #>
+            => new(
+                  Single<T0>.GetInstance(instantiator0)
+<# for (var k = 1; k <= i; k++) { #>
+                , Single<T<#= k #>>.GetInstance(instantiator<#= k #>)
+<# } #>
+            );
+<# } #>
+    }
+}

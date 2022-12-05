@@ -1,0 +1,17 @@
+{
+    "name": "ZBase.Foundation",
+    "rootNamespace": "ZBase.Foundation",
+    "references": [
+        "UniTask",
+        "ZString"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
