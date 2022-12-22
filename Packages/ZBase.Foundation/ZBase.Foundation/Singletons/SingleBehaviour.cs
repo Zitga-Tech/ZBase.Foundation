@@ -53,6 +53,13 @@ namespace ZBase.Foundation.Singletons
             private static readonly object s_lock = new();
             private static T s_instance;
 
+            /// <seealso href="https://docs.unity3d.com/Manual/DomainReloading.html"/>
+            [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
+            static void Init()
+            {
+                s_instance = null;
+            }
+
             public static T GetInstance(Lifetime lifetime)
             {
                 if (s_instance == false)

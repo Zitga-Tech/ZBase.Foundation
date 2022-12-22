@@ -1,4 +1,5 @@
 ﻿using System;
+using UnityEngine;
 
 namespace ZBase.Foundation.Singletons
 {
@@ -22,6 +23,13 @@ namespace ZBase.Foundation.Singletons
         private static class Single<T> where T : class
         {
             private static T s_instance;
+
+            /// <seealso href="https://docs.unity3d.com/Manual/DomainReloading.html"/>
+            [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
+            static void Init()
+            {
+                s_instance = null;
+            }
 
             public static T GetInstance(Func<T> instantiator)
             {
