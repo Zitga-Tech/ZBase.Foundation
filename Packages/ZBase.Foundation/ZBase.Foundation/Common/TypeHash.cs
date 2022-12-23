@@ -5,33 +5,61 @@ namespace ZBase.Foundation
     /// <summary>
     /// Represents the hash code of <see cref="System"/>.<see cref="Type"/>.
     /// </summary>
+    /// <remarks>
+    /// <see cref="TypeHash"/> should not be manually created but must be
+    /// retrieved retrieved from <see cref="System"/>.<see cref="Type"/>
+    /// by the implicit operator.
+    /// </remarks>
     public readonly struct TypeHash : IEquatable<TypeHash>
     {
-        private readonly int _value;
+        private const byte VALID = 1;
 
-        public TypeHash(Type type)
+        public static readonly TypeHash Null = new();
+
+        private readonly int _value;
+        private readonly byte _isValid;
+
+        private TypeHash(Type type)
         {
             _value = type.GetHashCode();
+            _isValid = VALID;
         }
 
         public override bool Equals(object obj)
             => obj switch {
-                TypeHash typeHash => _value == typeHash._value,
-                int hashCode => _value == hashCode,
-                Type type => _value == type.GetHashCode(),
+                TypeHash typeHash => _isValid == typeHash._isValid && _value == typeHash._value,
+                int hashCode => _isValid == VALID && _value == hashCode,
+                Type type => _isValid == VALID && _value == type.GetHashCode(),
                 _ => false
             };
 
         public bool Equals(TypeHash other)
-            => _value == other._value;
+            => _isValid == other._isValid && _value == other._value;
 
         public override int GetHashCode()
-            => _value;
+        {
+            if (_isValid != VALID)
+            {
+                throw new NullReferenceException(
+                    $"Cannot use an invalid {nameof(TypeHash)} value. " +
+                    $"{nameof(TypeHash)} value must be retrieved from System.Type " +
+                    $"by the implicit operator."
+                );
+            }
 
-        public static implicit operator int(TypeHash value)
+            return _value;
+        }
+
+        public static explicit operator int(TypeHash value)
             => value._value;
 
         public static implicit operator TypeHash(Type type)
             => new(type);
+
+        public static bool operator ==(TypeHash lhs, TypeHash rhs)
+            => lhs._isValid == rhs._isValid && lhs._value == rhs._value;
+
+        public static bool operator !=(TypeHash lhs, TypeHash rhs)
+            => lhs._isValid != rhs._isValid || lhs._value != rhs._value;
     }
 }
