@@ -1,17 +1,38 @@
 ﻿using System;
 using System.Runtime.CompilerServices;
+using UnityEngine;
 
 namespace ZBase.Foundation
 {
     public static class TypeCache<T>
     {
-        public static readonly Type Type = typeof(T);
+        private static Type s_type;
+        private static string s_name;
+        private static TypeHash s_hash;
+        private static bool s_isReferenceOrContainsReference;
 
-        public static readonly string Name = Type.Name;
+        static TypeCache()
+        {
+            Init();
+        }
 
-        public static readonly TypeHash Hash = Type;
+        /// <seealso href="https://docs.unity3d.com/Manual/DomainReloading.html"/>
+        [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
+        static void Init()
+        {
+            s_type = typeof(T);
+            s_name = Type.Name;
+            s_hash = Type;
+            s_isReferenceOrContainsReference = RuntimeHelpers.IsReferenceOrContainsReferences<T>();
+        }
 
-        public static readonly bool IsReferenceOrContainsReference = RuntimeHelpers.IsReferenceOrContainsReferences<T>();
+        public static Type Type => s_type;
+
+        public static string Name => s_name;
+
+        public static TypeHash Hash => s_hash;
+
+        public static bool IsReferenceOrContainsReference => s_isReferenceOrContainsReference;
     }
 
     public static class TypeCache
