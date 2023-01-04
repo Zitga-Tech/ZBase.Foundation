@@ -57,5 +57,8 @@ namespace ZBase.Foundation
 
             return string.Empty;
         }
+
+        public static bool TryGetName(T value, out string name)
+            => s_nameMap.TryGetValue(value, out name);
     }
 }
