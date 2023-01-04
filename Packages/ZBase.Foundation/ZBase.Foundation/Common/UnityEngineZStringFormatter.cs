@@ -31,7 +31,7 @@ namespace ZBase.Foundation
     /// </remarks>
     public static class UnityEngineZStringFormatter
     {
-        [RuntimeInitializeOnLoadMethod]
+        [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
         static void RegisterForamtters()
         {
             Utf16ValueStringBuilder.RegisterTryFormat<Bounds>(TryFormat);
