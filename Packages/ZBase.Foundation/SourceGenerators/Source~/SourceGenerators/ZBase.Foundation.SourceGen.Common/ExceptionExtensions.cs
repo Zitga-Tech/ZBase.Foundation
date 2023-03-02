@@ -1,4 +1,9 @@
-﻿using System;
+﻿///**********************************************************///
+/// Licensed under the Unity Companion License               ///
+/// https://unity.com/legal/licenses/unity-companion-license ///
+///**********************************************************///
+
+using System;
 
 namespace ZBase.Foundation.SourceGen
 {

@@ -1,4 +1,9 @@
-﻿using Microsoft.CodeAnalysis;
+﻿///**********************************************************///
+/// Licensed under the Unity Companion License               ///
+/// https://unity.com/legal/licenses/unity-companion-license ///
+///**********************************************************///
+
+using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using System;
 using System.Collections.Generic;
