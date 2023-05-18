@@ -1,4 +1,6 @@
-﻿using System;
+﻿#if ZBASE_FOUNDATION_ZSTRING
+
+using System;
 using System.Runtime.CompilerServices;
 using UnityEngine;
 using Cysharp.Text;
@@ -867,3 +869,5 @@ namespace ZBase.Foundation
         }
     }
 }
+
+#endif

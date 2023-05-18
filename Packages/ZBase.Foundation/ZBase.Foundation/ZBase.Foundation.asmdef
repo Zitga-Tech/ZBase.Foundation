@@ -2,7 +2,6 @@
     "name": "ZBase.Foundation",
     "rootNamespace": "ZBase.Foundation",
     "references": [
-        "UniTask",
         "ZString"
     ],
     "includePlatforms": [],
@@ -12,6 +11,12 @@
     "precompiledReferences": [],
     "autoReferenced": true,
     "defineConstraints": [],
-    "versionDefines": [],
+    "versionDefines": [
+        {
+            "name": "com.cysharp.zstring",
+            "expression": "",
+            "define": "ZBASE_FOUNDATION_ZSTRING"
+        }
+    ],
     "noEngineReferences": false
 }
