@@ -23,9 +23,9 @@ namespace ZBase.Foundation.Singletons
 
         public static Values<T0<# for (var k = 1; k <= i; k++) { #>, T<#= k #><# } #>>
             Of<T0<# for (var k = 1; k <= i; k++) { #>, T<#= k #><# } #>>(
-                  Lifetime lifetime0 = Lifetime.Default
+                  Lifetime lifetime0 = Lifetime.EveryScenes
 <# for (var k = 1; k <= i; k++) { #>
-                , Lifetime lifetime<#= k #> = Lifetime.Default
+                , Lifetime lifetime<#= k #> = Lifetime.EveryScenes
 <# } #>
             )
 <# for (var k = 0; k <= i; k++) { #>

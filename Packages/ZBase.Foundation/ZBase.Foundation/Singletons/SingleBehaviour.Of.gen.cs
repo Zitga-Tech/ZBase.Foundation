@@ -13,8 +13,8 @@ namespace ZBase.Foundation.Singletons
     {
         public static Values<T0, T1>
             Of<T0, T1>(
-                  Lifetime lifetime0 = Lifetime.Default
-                , Lifetime lifetime1 = Lifetime.Default
+                  Lifetime lifetime0 = Lifetime.EveryScenes
+                , Lifetime lifetime1 = Lifetime.EveryScenes
             )
             where T0 : MonoBehaviour
             where T1 : MonoBehaviour
@@ -25,9 +25,9 @@ namespace ZBase.Foundation.Singletons
 
         public static Values<T0, T1, T2>
             Of<T0, T1, T2>(
-                  Lifetime lifetime0 = Lifetime.Default
-                , Lifetime lifetime1 = Lifetime.Default
-                , Lifetime lifetime2 = Lifetime.Default
+                  Lifetime lifetime0 = Lifetime.EveryScenes
+                , Lifetime lifetime1 = Lifetime.EveryScenes
+                , Lifetime lifetime2 = Lifetime.EveryScenes
             )
             where T0 : MonoBehaviour
             where T1 : MonoBehaviour
@@ -40,10 +40,10 @@ namespace ZBase.Foundation.Singletons
 
         public static Values<T0, T1, T2, T3>
             Of<T0, T1, T2, T3>(
-                  Lifetime lifetime0 = Lifetime.Default
-                , Lifetime lifetime1 = Lifetime.Default
-                , Lifetime lifetime2 = Lifetime.Default
-                , Lifetime lifetime3 = Lifetime.Default
+                  Lifetime lifetime0 = Lifetime.EveryScenes
+                , Lifetime lifetime1 = Lifetime.EveryScenes
+                , Lifetime lifetime2 = Lifetime.EveryScenes
+                , Lifetime lifetime3 = Lifetime.EveryScenes
             )
             where T0 : MonoBehaviour
             where T1 : MonoBehaviour
@@ -58,11 +58,11 @@ namespace ZBase.Foundation.Singletons
 
         public static Values<T0, T1, T2, T3, T4>
             Of<T0, T1, T2, T3, T4>(
-                  Lifetime lifetime0 = Lifetime.Default
-                , Lifetime lifetime1 = Lifetime.Default
-                , Lifetime lifetime2 = Lifetime.Default
-                , Lifetime lifetime3 = Lifetime.Default
-                , Lifetime lifetime4 = Lifetime.Default
+                  Lifetime lifetime0 = Lifetime.EveryScenes
+                , Lifetime lifetime1 = Lifetime.EveryScenes
+                , Lifetime lifetime2 = Lifetime.EveryScenes
+                , Lifetime lifetime3 = Lifetime.EveryScenes
+                , Lifetime lifetime4 = Lifetime.EveryScenes
             )
             where T0 : MonoBehaviour
             where T1 : MonoBehaviour
@@ -79,12 +79,12 @@ namespace ZBase.Foundation.Singletons
 
         public static Values<T0, T1, T2, T3, T4, T5>
             Of<T0, T1, T2, T3, T4, T5>(
-                  Lifetime lifetime0 = Lifetime.Default
-                , Lifetime lifetime1 = Lifetime.Default
-                , Lifetime lifetime2 = Lifetime.Default
-                , Lifetime lifetime3 = Lifetime.Default
-                , Lifetime lifetime4 = Lifetime.Default
-                , Lifetime lifetime5 = Lifetime.Default
+                  Lifetime lifetime0 = Lifetime.EveryScenes
+                , Lifetime lifetime1 = Lifetime.EveryScenes
+                , Lifetime lifetime2 = Lifetime.EveryScenes
+                , Lifetime lifetime3 = Lifetime.EveryScenes
+                , Lifetime lifetime4 = Lifetime.EveryScenes
+                , Lifetime lifetime5 = Lifetime.EveryScenes
             )
             where T0 : MonoBehaviour
             where T1 : MonoBehaviour
@@ -103,13 +103,13 @@ namespace ZBase.Foundation.Singletons
 
         public static Values<T0, T1, T2, T3, T4, T5, T6>
             Of<T0, T1, T2, T3, T4, T5, T6>(
-                  Lifetime lifetime0 = Lifetime.Default
-                , Lifetime lifetime1 = Lifetime.Default
-                , Lifetime lifetime2 = Lifetime.Default
-                , Lifetime lifetime3 = Lifetime.Default
-                , Lifetime lifetime4 = Lifetime.Default
-                , Lifetime lifetime5 = Lifetime.Default
-                , Lifetime lifetime6 = Lifetime.Default
+                  Lifetime lifetime0 = Lifetime.EveryScenes
+                , Lifetime lifetime1 = Lifetime.EveryScenes
+                , Lifetime lifetime2 = Lifetime.EveryScenes
+                , Lifetime lifetime3 = Lifetime.EveryScenes
+                , Lifetime lifetime4 = Lifetime.EveryScenes
+                , Lifetime lifetime5 = Lifetime.EveryScenes
+                , Lifetime lifetime6 = Lifetime.EveryScenes
             )
             where T0 : MonoBehaviour
             where T1 : MonoBehaviour
@@ -130,14 +130,14 @@ namespace ZBase.Foundation.Singletons
 
         public static Values<T0, T1, T2, T3, T4, T5, T6, T7>
             Of<T0, T1, T2, T3, T4, T5, T6, T7>(
-                  Lifetime lifetime0 = Lifetime.Default
-                , Lifetime lifetime1 = Lifetime.Default
-                , Lifetime lifetime2 = Lifetime.Default
-                , Lifetime lifetime3 = Lifetime.Default
-                , Lifetime lifetime4 = Lifetime.Default
-                , Lifetime lifetime5 = Lifetime.Default
-                , Lifetime lifetime6 = Lifetime.Default
-                , Lifetime lifetime7 = Lifetime.Default
+                  Lifetime lifetime0 = Lifetime.EveryScenes
+                , Lifetime lifetime1 = Lifetime.EveryScenes
+                , Lifetime lifetime2 = Lifetime.EveryScenes
+                , Lifetime lifetime3 = Lifetime.EveryScenes
+                , Lifetime lifetime4 = Lifetime.EveryScenes
+                , Lifetime lifetime5 = Lifetime.EveryScenes
+                , Lifetime lifetime6 = Lifetime.EveryScenes
+                , Lifetime lifetime7 = Lifetime.EveryScenes
             )
             where T0 : MonoBehaviour
             where T1 : MonoBehaviour
@@ -160,15 +160,15 @@ namespace ZBase.Foundation.Singletons
 
         public static Values<T0, T1, T2, T3, T4, T5, T6, T7, T8>
             Of<T0, T1, T2, T3, T4, T5, T6, T7, T8>(
-                  Lifetime lifetime0 = Lifetime.Default
-                , Lifetime lifetime1 = Lifetime.Default
-                , Lifetime lifetime2 = Lifetime.Default
-                , Lifetime lifetime3 = Lifetime.Default
-                , Lifetime lifetime4 = Lifetime.Default
-                , Lifetime lifetime5 = Lifetime.Default
-                , Lifetime lifetime6 = Lifetime.Default
-                , Lifetime lifetime7 = Lifetime.Default
-                , Lifetime lifetime8 = Lifetime.Default
+                  Lifetime lifetime0 = Lifetime.EveryScenes
+                , Lifetime lifetime1 = Lifetime.EveryScenes
+                , Lifetime lifetime2 = Lifetime.EveryScenes
+                , Lifetime lifetime3 = Lifetime.EveryScenes
+                , Lifetime lifetime4 = Lifetime.EveryScenes
+                , Lifetime lifetime5 = Lifetime.EveryScenes
+                , Lifetime lifetime6 = Lifetime.EveryScenes
+                , Lifetime lifetime7 = Lifetime.EveryScenes
+                , Lifetime lifetime8 = Lifetime.EveryScenes
             )
             where T0 : MonoBehaviour
             where T1 : MonoBehaviour
@@ -193,16 +193,16 @@ namespace ZBase.Foundation.Singletons
 
         public static Values<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9>
             Of<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9>(
-                  Lifetime lifetime0 = Lifetime.Default
-                , Lifetime lifetime1 = Lifetime.Default
-                , Lifetime lifetime2 = Lifetime.Default
-                , Lifetime lifetime3 = Lifetime.Default
-                , Lifetime lifetime4 = Lifetime.Default
-                , Lifetime lifetime5 = Lifetime.Default
-                , Lifetime lifetime6 = Lifetime.Default
-                , Lifetime lifetime7 = Lifetime.Default
-                , Lifetime lifetime8 = Lifetime.Default
-                , Lifetime lifetime9 = Lifetime.Default
+                  Lifetime lifetime0 = Lifetime.EveryScenes
+                , Lifetime lifetime1 = Lifetime.EveryScenes
+                , Lifetime lifetime2 = Lifetime.EveryScenes
+                , Lifetime lifetime3 = Lifetime.EveryScenes
+                , Lifetime lifetime4 = Lifetime.EveryScenes
+                , Lifetime lifetime5 = Lifetime.EveryScenes
+                , Lifetime lifetime6 = Lifetime.EveryScenes
+                , Lifetime lifetime7 = Lifetime.EveryScenes
+                , Lifetime lifetime8 = Lifetime.EveryScenes
+                , Lifetime lifetime9 = Lifetime.EveryScenes
             )
             where T0 : MonoBehaviour
             where T1 : MonoBehaviour
@@ -229,17 +229,17 @@ namespace ZBase.Foundation.Singletons
 
         public static Values<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>
             Of<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>(
-                  Lifetime lifetime0 = Lifetime.Default
-                , Lifetime lifetime1 = Lifetime.Default
-                , Lifetime lifetime2 = Lifetime.Default
-                , Lifetime lifetime3 = Lifetime.Default
-                , Lifetime lifetime4 = Lifetime.Default
-                , Lifetime lifetime5 = Lifetime.Default
-                , Lifetime lifetime6 = Lifetime.Default
-                , Lifetime lifetime7 = Lifetime.Default
-                , Lifetime lifetime8 = Lifetime.Default
-                , Lifetime lifetime9 = Lifetime.Default
-                , Lifetime lifetime10 = Lifetime.Default
+                  Lifetime lifetime0 = Lifetime.EveryScenes
+                , Lifetime lifetime1 = Lifetime.EveryScenes
+                , Lifetime lifetime2 = Lifetime.EveryScenes
+                , Lifetime lifetime3 = Lifetime.EveryScenes
+                , Lifetime lifetime4 = Lifetime.EveryScenes
+                , Lifetime lifetime5 = Lifetime.EveryScenes
+                , Lifetime lifetime6 = Lifetime.EveryScenes
+                , Lifetime lifetime7 = Lifetime.EveryScenes
+                , Lifetime lifetime8 = Lifetime.EveryScenes
+                , Lifetime lifetime9 = Lifetime.EveryScenes
+                , Lifetime lifetime10 = Lifetime.EveryScenes
             )
             where T0 : MonoBehaviour
             where T1 : MonoBehaviour
@@ -268,18 +268,18 @@ namespace ZBase.Foundation.Singletons
 
         public static Values<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11>
             Of<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11>(
-                  Lifetime lifetime0 = Lifetime.Default
-                , Lifetime lifetime1 = Lifetime.Default
-                , Lifetime lifetime2 = Lifetime.Default
-                , Lifetime lifetime3 = Lifetime.Default
-                , Lifetime lifetime4 = Lifetime.Default
-                , Lifetime lifetime5 = Lifetime.Default
-                , Lifetime lifetime6 = Lifetime.Default
-                , Lifetime lifetime7 = Lifetime.Default
-                , Lifetime lifetime8 = Lifetime.Default
-                , Lifetime lifetime9 = Lifetime.Default
-                , Lifetime lifetime10 = Lifetime.Default
-                , Lifetime lifetime11 = Lifetime.Default
+                  Lifetime lifetime0 = Lifetime.EveryScenes
+                , Lifetime lifetime1 = Lifetime.EveryScenes
+                , Lifetime lifetime2 = Lifetime.EveryScenes
+                , Lifetime lifetime3 = Lifetime.EveryScenes
+                , Lifetime lifetime4 = Lifetime.EveryScenes
+                , Lifetime lifetime5 = Lifetime.EveryScenes
+                , Lifetime lifetime6 = Lifetime.EveryScenes
+                , Lifetime lifetime7 = Lifetime.EveryScenes
+                , Lifetime lifetime8 = Lifetime.EveryScenes
+                , Lifetime lifetime9 = Lifetime.EveryScenes
+                , Lifetime lifetime10 = Lifetime.EveryScenes
+                , Lifetime lifetime11 = Lifetime.EveryScenes
             )
             where T0 : MonoBehaviour
             where T1 : MonoBehaviour
@@ -310,19 +310,19 @@ namespace ZBase.Foundation.Singletons
 
         public static Values<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12>
             Of<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12>(
-                  Lifetime lifetime0 = Lifetime.Default
-                , Lifetime lifetime1 = Lifetime.Default
-                , Lifetime lifetime2 = Lifetime.Default
-                , Lifetime lifetime3 = Lifetime.Default
-                , Lifetime lifetime4 = Lifetime.Default
-                , Lifetime lifetime5 = Lifetime.Default
-                , Lifetime lifetime6 = Lifetime.Default
-                , Lifetime lifetime7 = Lifetime.Default
-                , Lifetime lifetime8 = Lifetime.Default
-                , Lifetime lifetime9 = Lifetime.Default
-                , Lifetime lifetime10 = Lifetime.Default
-                , Lifetime lifetime11 = Lifetime.Default
-                , Lifetime lifetime12 = Lifetime.Default
+                  Lifetime lifetime0 = Lifetime.EveryScenes
+                , Lifetime lifetime1 = Lifetime.EveryScenes
+                , Lifetime lifetime2 = Lifetime.EveryScenes
+                , Lifetime lifetime3 = Lifetime.EveryScenes
+                , Lifetime lifetime4 = Lifetime.EveryScenes
+                , Lifetime lifetime5 = Lifetime.EveryScenes
+                , Lifetime lifetime6 = Lifetime.EveryScenes
+                , Lifetime lifetime7 = Lifetime.EveryScenes
+                , Lifetime lifetime8 = Lifetime.EveryScenes
+                , Lifetime lifetime9 = Lifetime.EveryScenes
+                , Lifetime lifetime10 = Lifetime.EveryScenes
+                , Lifetime lifetime11 = Lifetime.EveryScenes
+                , Lifetime lifetime12 = Lifetime.EveryScenes
             )
             where T0 : MonoBehaviour
             where T1 : MonoBehaviour
@@ -355,20 +355,20 @@ namespace ZBase.Foundation.Singletons
 
         public static Values<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13>
             Of<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13>(
-                  Lifetime lifetime0 = Lifetime.Default
-                , Lifetime lifetime1 = Lifetime.Default
-                , Lifetime lifetime2 = Lifetime.Default
-                , Lifetime lifetime3 = Lifetime.Default
-                , Lifetime lifetime4 = Lifetime.Default
-                , Lifetime lifetime5 = Lifetime.Default
-                , Lifetime lifetime6 = Lifetime.Default
-                , Lifetime lifetime7 = Lifetime.Default
-                , Lifetime lifetime8 = Lifetime.Default
-                , Lifetime lifetime9 = Lifetime.Default
-                , Lifetime lifetime10 = Lifetime.Default
-                , Lifetime lifetime11 = Lifetime.Default
-                , Lifetime lifetime12 = Lifetime.Default
-                , Lifetime lifetime13 = Lifetime.Default
+                  Lifetime lifetime0 = Lifetime.EveryScenes
+                , Lifetime lifetime1 = Lifetime.EveryScenes
+                , Lifetime lifetime2 = Lifetime.EveryScenes
+                , Lifetime lifetime3 = Lifetime.EveryScenes
+                , Lifetime lifetime4 = Lifetime.EveryScenes
+                , Lifetime lifetime5 = Lifetime.EveryScenes
+                , Lifetime lifetime6 = Lifetime.EveryScenes
+                , Lifetime lifetime7 = Lifetime.EveryScenes
+                , Lifetime lifetime8 = Lifetime.EveryScenes
+                , Lifetime lifetime9 = Lifetime.EveryScenes
+                , Lifetime lifetime10 = Lifetime.EveryScenes
+                , Lifetime lifetime11 = Lifetime.EveryScenes
+                , Lifetime lifetime12 = Lifetime.EveryScenes
+                , Lifetime lifetime13 = Lifetime.EveryScenes
             )
             where T0 : MonoBehaviour
             where T1 : MonoBehaviour
@@ -403,21 +403,21 @@ namespace ZBase.Foundation.Singletons
 
         public static Values<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14>
             Of<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14>(
-                  Lifetime lifetime0 = Lifetime.Default
-                , Lifetime lifetime1 = Lifetime.Default
-                , Lifetime lifetime2 = Lifetime.Default
-                , Lifetime lifetime3 = Lifetime.Default
-                , Lifetime lifetime4 = Lifetime.Default
-                , Lifetime lifetime5 = Lifetime.Default
-                , Lifetime lifetime6 = Lifetime.Default
-                , Lifetime lifetime7 = Lifetime.Default
-                , Lifetime lifetime8 = Lifetime.Default
-                , Lifetime lifetime9 = Lifetime.Default
-                , Lifetime lifetime10 = Lifetime.Default
-                , Lifetime lifetime11 = Lifetime.Default
-                , Lifetime lifetime12 = Lifetime.Default
-                , Lifetime lifetime13 = Lifetime.Default
-                , Lifetime lifetime14 = Lifetime.Default
+                  Lifetime lifetime0 = Lifetime.EveryScenes
+                , Lifetime lifetime1 = Lifetime.EveryScenes
+                , Lifetime lifetime2 = Lifetime.EveryScenes
+                , Lifetime lifetime3 = Lifetime.EveryScenes
+                , Lifetime lifetime4 = Lifetime.EveryScenes
+                , Lifetime lifetime5 = Lifetime.EveryScenes
+                , Lifetime lifetime6 = Lifetime.EveryScenes
+                , Lifetime lifetime7 = Lifetime.EveryScenes
+                , Lifetime lifetime8 = Lifetime.EveryScenes
+                , Lifetime lifetime9 = Lifetime.EveryScenes
+                , Lifetime lifetime10 = Lifetime.EveryScenes
+                , Lifetime lifetime11 = Lifetime.EveryScenes
+                , Lifetime lifetime12 = Lifetime.EveryScenes
+                , Lifetime lifetime13 = Lifetime.EveryScenes
+                , Lifetime lifetime14 = Lifetime.EveryScenes
             )
             where T0 : MonoBehaviour
             where T1 : MonoBehaviour
@@ -454,22 +454,22 @@ namespace ZBase.Foundation.Singletons
 
         public static Values<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15>
             Of<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15>(
-                  Lifetime lifetime0 = Lifetime.Default
-                , Lifetime lifetime1 = Lifetime.Default
-                , Lifetime lifetime2 = Lifetime.Default
-                , Lifetime lifetime3 = Lifetime.Default
-                , Lifetime lifetime4 = Lifetime.Default
-                , Lifetime lifetime5 = Lifetime.Default
-                , Lifetime lifetime6 = Lifetime.Default
-                , Lifetime lifetime7 = Lifetime.Default
-                , Lifetime lifetime8 = Lifetime.Default
-                , Lifetime lifetime9 = Lifetime.Default
-                , Lifetime lifetime10 = Lifetime.Default
-                , Lifetime lifetime11 = Lifetime.Default
-                , Lifetime lifetime12 = Lifetime.Default
-                , Lifetime lifetime13 = Lifetime.Default
-                , Lifetime lifetime14 = Lifetime.Default
-                , Lifetime lifetime15 = Lifetime.Default
+                  Lifetime lifetime0 = Lifetime.EveryScenes
+                , Lifetime lifetime1 = Lifetime.EveryScenes
+                , Lifetime lifetime2 = Lifetime.EveryScenes
+                , Lifetime lifetime3 = Lifetime.EveryScenes
+                , Lifetime lifetime4 = Lifetime.EveryScenes
+                , Lifetime lifetime5 = Lifetime.EveryScenes
+                , Lifetime lifetime6 = Lifetime.EveryScenes
+                , Lifetime lifetime7 = Lifetime.EveryScenes
+                , Lifetime lifetime8 = Lifetime.EveryScenes
+                , Lifetime lifetime9 = Lifetime.EveryScenes
+                , Lifetime lifetime10 = Lifetime.EveryScenes
+                , Lifetime lifetime11 = Lifetime.EveryScenes
+                , Lifetime lifetime12 = Lifetime.EveryScenes
+                , Lifetime lifetime13 = Lifetime.EveryScenes
+                , Lifetime lifetime14 = Lifetime.EveryScenes
+                , Lifetime lifetime15 = Lifetime.EveryScenes
             )
             where T0 : MonoBehaviour
             where T1 : MonoBehaviour
@@ -508,23 +508,23 @@ namespace ZBase.Foundation.Singletons
 
         public static Values<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16>
             Of<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16>(
-                  Lifetime lifetime0 = Lifetime.Default
-                , Lifetime lifetime1 = Lifetime.Default
-                , Lifetime lifetime2 = Lifetime.Default
-                , Lifetime lifetime3 = Lifetime.Default
-                , Lifetime lifetime4 = Lifetime.Default
-                , Lifetime lifetime5 = Lifetime.Default
-                , Lifetime lifetime6 = Lifetime.Default
-                , Lifetime lifetime7 = Lifetime.Default
-                , Lifetime lifetime8 = Lifetime.Default
-                , Lifetime lifetime9 = Lifetime.Default
-                , Lifetime lifetime10 = Lifetime.Default
-                , Lifetime lifetime11 = Lifetime.Default
-                , Lifetime lifetime12 = Lifetime.Default
-                , Lifetime lifetime13 = Lifetime.Default
-                , Lifetime lifetime14 = Lifetime.Default
-                , Lifetime lifetime15 = Lifetime.Default
-                , Lifetime lifetime16 = Lifetime.Default
+                  Lifetime lifetime0 = Lifetime.EveryScenes
+                , Lifetime lifetime1 = Lifetime.EveryScenes
+                , Lifetime lifetime2 = Lifetime.EveryScenes
+                , Lifetime lifetime3 = Lifetime.EveryScenes
+                , Lifetime lifetime4 = Lifetime.EveryScenes
+                , Lifetime lifetime5 = Lifetime.EveryScenes
+                , Lifetime lifetime6 = Lifetime.EveryScenes
+                , Lifetime lifetime7 = Lifetime.EveryScenes
+                , Lifetime lifetime8 = Lifetime.EveryScenes
+                , Lifetime lifetime9 = Lifetime.EveryScenes
+                , Lifetime lifetime10 = Lifetime.EveryScenes
+                , Lifetime lifetime11 = Lifetime.EveryScenes
+                , Lifetime lifetime12 = Lifetime.EveryScenes
+                , Lifetime lifetime13 = Lifetime.EveryScenes
+                , Lifetime lifetime14 = Lifetime.EveryScenes
+                , Lifetime lifetime15 = Lifetime.EveryScenes
+                , Lifetime lifetime16 = Lifetime.EveryScenes
             )
             where T0 : MonoBehaviour
             where T1 : MonoBehaviour
@@ -565,24 +565,24 @@ namespace ZBase.Foundation.Singletons
 
         public static Values<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17>
             Of<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17>(
-                  Lifetime lifetime0 = Lifetime.Default
-                , Lifetime lifetime1 = Lifetime.Default
-                , Lifetime lifetime2 = Lifetime.Default
-                , Lifetime lifetime3 = Lifetime.Default
-                , Lifetime lifetime4 = Lifetime.Default
-                , Lifetime lifetime5 = Lifetime.Default
-                , Lifetime lifetime6 = Lifetime.Default
-                , Lifetime lifetime7 = Lifetime.Default
-                , Lifetime lifetime8 = Lifetime.Default
-                , Lifetime lifetime9 = Lifetime.Default
-                , Lifetime lifetime10 = Lifetime.Default
-                , Lifetime lifetime11 = Lifetime.Default
-                , Lifetime lifetime12 = Lifetime.Default
-                , Lifetime lifetime13 = Lifetime.Default
-                , Lifetime lifetime14 = Lifetime.Default
-                , Lifetime lifetime15 = Lifetime.Default
-                , Lifetime lifetime16 = Lifetime.Default
-                , Lifetime lifetime17 = Lifetime.Default
+                  Lifetime lifetime0 = Lifetime.EveryScenes
+                , Lifetime lifetime1 = Lifetime.EveryScenes
+                , Lifetime lifetime2 = Lifetime.EveryScenes
+                , Lifetime lifetime3 = Lifetime.EveryScenes
+                , Lifetime lifetime4 = Lifetime.EveryScenes
+                , Lifetime lifetime5 = Lifetime.EveryScenes
+                , Lifetime lifetime6 = Lifetime.EveryScenes
+                , Lifetime lifetime7 = Lifetime.EveryScenes
+                , Lifetime lifetime8 = Lifetime.EveryScenes
+                , Lifetime lifetime9 = Lifetime.EveryScenes
+                , Lifetime lifetime10 = Lifetime.EveryScenes
+                , Lifetime lifetime11 = Lifetime.EveryScenes
+                , Lifetime lifetime12 = Lifetime.EveryScenes
+                , Lifetime lifetime13 = Lifetime.EveryScenes
+                , Lifetime lifetime14 = Lifetime.EveryScenes
+                , Lifetime lifetime15 = Lifetime.EveryScenes
+                , Lifetime lifetime16 = Lifetime.EveryScenes
+                , Lifetime lifetime17 = Lifetime.EveryScenes
             )
             where T0 : MonoBehaviour
             where T1 : MonoBehaviour
@@ -625,25 +625,25 @@ namespace ZBase.Foundation.Singletons
 
         public static Values<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18>
             Of<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18>(
-                  Lifetime lifetime0 = Lifetime.Default
-                , Lifetime lifetime1 = Lifetime.Default
-                , Lifetime lifetime2 = Lifetime.Default
-                , Lifetime lifetime3 = Lifetime.Default
-                , Lifetime lifetime4 = Lifetime.Default
-                , Lifetime lifetime5 = Lifetime.Default
-                , Lifetime lifetime6 = Lifetime.Default
-                , Lifetime lifetime7 = Lifetime.Default
-                , Lifetime lifetime8 = Lifetime.Default
-                , Lifetime lifetime9 = Lifetime.Default
-                , Lifetime lifetime10 = Lifetime.Default
-                , Lifetime lifetime11 = Lifetime.Default
-                , Lifetime lifetime12 = Lifetime.Default
-                , Lifetime lifetime13 = Lifetime.Default
-                , Lifetime lifetime14 = Lifetime.Default
-                , Lifetime lifetime15 = Lifetime.Default
-                , Lifetime lifetime16 = Lifetime.Default
-                , Lifetime lifetime17 = Lifetime.Default
-                , Lifetime lifetime18 = Lifetime.Default
+                  Lifetime lifetime0 = Lifetime.EveryScenes
+                , Lifetime lifetime1 = Lifetime.EveryScenes
+                , Lifetime lifetime2 = Lifetime.EveryScenes
+                , Lifetime lifetime3 = Lifetime.EveryScenes
+                , Lifetime lifetime4 = Lifetime.EveryScenes
+                , Lifetime lifetime5 = Lifetime.EveryScenes
+                , Lifetime lifetime6 = Lifetime.EveryScenes
+                , Lifetime lifetime7 = Lifetime.EveryScenes
+                , Lifetime lifetime8 = Lifetime.EveryScenes
+                , Lifetime lifetime9 = Lifetime.EveryScenes
+                , Lifetime lifetime10 = Lifetime.EveryScenes
+                , Lifetime lifetime11 = Lifetime.EveryScenes
+                , Lifetime lifetime12 = Lifetime.EveryScenes
+                , Lifetime lifetime13 = Lifetime.EveryScenes
+                , Lifetime lifetime14 = Lifetime.EveryScenes
+                , Lifetime lifetime15 = Lifetime.EveryScenes
+                , Lifetime lifetime16 = Lifetime.EveryScenes
+                , Lifetime lifetime17 = Lifetime.EveryScenes
+                , Lifetime lifetime18 = Lifetime.EveryScenes
             )
             where T0 : MonoBehaviour
             where T1 : MonoBehaviour
@@ -688,26 +688,26 @@ namespace ZBase.Foundation.Singletons
 
         public static Values<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19>
             Of<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19>(
-                  Lifetime lifetime0 = Lifetime.Default
-                , Lifetime lifetime1 = Lifetime.Default
-                , Lifetime lifetime2 = Lifetime.Default
-                , Lifetime lifetime3 = Lifetime.Default
-                , Lifetime lifetime4 = Lifetime.Default
-                , Lifetime lifetime5 = Lifetime.Default
-                , Lifetime lifetime6 = Lifetime.Default
-                , Lifetime lifetime7 = Lifetime.Default
-                , Lifetime lifetime8 = Lifetime.Default
-                , Lifetime lifetime9 = Lifetime.Default
-                , Lifetime lifetime10 = Lifetime.Default
-                , Lifetime lifetime11 = Lifetime.Default
-                , Lifetime lifetime12 = Lifetime.Default
-                , Lifetime lifetime13 = Lifetime.Default
-                , Lifetime lifetime14 = Lifetime.Default
-                , Lifetime lifetime15 = Lifetime.Default
-                , Lifetime lifetime16 = Lifetime.Default
-                , Lifetime lifetime17 = Lifetime.Default
-                , Lifetime lifetime18 = Lifetime.Default
-                , Lifetime lifetime19 = Lifetime.Default
+                  Lifetime lifetime0 = Lifetime.EveryScenes
+                , Lifetime lifetime1 = Lifetime.EveryScenes
+                , Lifetime lifetime2 = Lifetime.EveryScenes
+                , Lifetime lifetime3 = Lifetime.EveryScenes
+                , Lifetime lifetime4 = Lifetime.EveryScenes
+                , Lifetime lifetime5 = Lifetime.EveryScenes
+                , Lifetime lifetime6 = Lifetime.EveryScenes
+                , Lifetime lifetime7 = Lifetime.EveryScenes
+                , Lifetime lifetime8 = Lifetime.EveryScenes
+                , Lifetime lifetime9 = Lifetime.EveryScenes
+                , Lifetime lifetime10 = Lifetime.EveryScenes
+                , Lifetime lifetime11 = Lifetime.EveryScenes
+                , Lifetime lifetime12 = Lifetime.EveryScenes
+                , Lifetime lifetime13 = Lifetime.EveryScenes
+                , Lifetime lifetime14 = Lifetime.EveryScenes
+                , Lifetime lifetime15 = Lifetime.EveryScenes
+                , Lifetime lifetime16 = Lifetime.EveryScenes
+                , Lifetime lifetime17 = Lifetime.EveryScenes
+                , Lifetime lifetime18 = Lifetime.EveryScenes
+                , Lifetime lifetime19 = Lifetime.EveryScenes
             )
             where T0 : MonoBehaviour
             where T1 : MonoBehaviour

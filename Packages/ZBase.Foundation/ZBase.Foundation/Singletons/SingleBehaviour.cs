@@ -11,24 +11,6 @@ namespace ZBase.Foundation.Singletons
         public enum Lifetime
         {
             /// <summary>
-            /// The singleton <see cref="MonoBehaviour"/> should only exist
-            /// in the current scene.
-            /// </summary>
-            /// <remarks>
-            /// This option will NOT affect any existing <see cref="GameObject"/>.
-            /// </remarks>
-            Default = 0,
-
-            /// <summary>
-            /// The singleton <see cref="MonoBehaviour"/> should only exist
-            /// in the current scene.
-            /// </summary>
-            /// <remarks>
-            /// This option will NOT affect any existing <see cref="GameObject"/>.
-            /// </remarks>
-            SingleScene = 1,
-
-            /// <summary>
             /// The singleton <see cref="MonoBehaviour"/> should exist
             /// through every scene.
             /// </summary>
@@ -42,13 +24,22 @@ namespace ZBase.Foundation.Singletons
             /// This option will NOT affect any existing <see cref="GameObject"/>.
             /// </para>
             /// </remarks>
-            EveryScenes = 2,
+            EveryScenes = 0,
+
+            /// <summary>
+            /// The singleton <see cref="MonoBehaviour"/> should only exist
+            /// in the current scene.
+            /// </summary>
+            /// <remarks>
+            /// This option will NOT affect any existing <see cref="GameObject"/>.
+            /// </remarks>
+            SingleScene = 1,
         }
 
-        public static T Of<T>(Lifetime lifetime = Lifetime.Default) where T : MonoBehaviour
+        public static T Of<T>(Lifetime lifetime = Lifetime.EveryScenes) where T : MonoBehaviour
             => Single<T>.GetInstance(lifetime);
 
-        private static class Single<T> where T : MonoBehaviour
+        internal static class Single<T> where T : MonoBehaviour
         {
             private static readonly object s_lock = new();
             private static T s_instance;
@@ -60,7 +51,22 @@ namespace ZBase.Foundation.Singletons
                 s_instance = null;
             }
 
-            public static T GetInstance(Lifetime lifetime)
+            public static void SetInstance(T instance, Lifetime lifetime)
+            {
+                if (instance == false || s_instance)
+                {
+                    return;
+                }
+
+                s_instance = instance;
+
+                if (lifetime == Lifetime.EveryScenes)
+                {
+                    Object.DontDestroyOnLoad(instance.gameObject);
+                }
+            }
+
+            public static T GetInstance(Lifetime lifetime, bool autoRename = true)
             {
                 if (s_instance == false)
                 {
@@ -70,17 +76,20 @@ namespace ZBase.Foundation.Singletons
 
                         if (s_instance == false)
                         {
-                            var gameObject = new GameObject();
-
-                            if (lifetime == Lifetime.EveryScenes)
-                            {
-                                Object.DontDestroyOnLoad(gameObject);
-                            }
-
-                            s_instance = gameObject.AddComponent<T>();
+                            var compType = typeof(T);
+                            var gameObject = new GameObject(compType.Name);
+                            s_instance = (T)gameObject.AddComponent(compType);
                         }
 
-                        s_instance.gameObject.name = $"[{nameof(Singleton)}] {typeof(T).Name}";
+                        if (lifetime == Lifetime.EveryScenes)
+                        {
+                            Object.DontDestroyOnLoad(s_instance.gameObject);
+                        }
+
+                        if (autoRename)
+                        {
+                            s_instance.gameObject.name = $"[{nameof(Singleton)}] {typeof(T).Name}";
+                        }
                     }
                 }
 

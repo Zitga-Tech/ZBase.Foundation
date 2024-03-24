@@ -20,7 +20,7 @@ namespace ZBase.Foundation.Singletons
             return Single<T>.GetInstance(instantiator);
         }
 
-        private static class Single<T> where T : class
+        internal static class Single<T> where T : class
         {
             private static T s_instance;
 
